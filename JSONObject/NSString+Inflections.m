@@ -7,7 +7,7 @@
 
 @implementation NSString(Inflections)
 
-- (NSString *)camelCase {
+- (NSString *)camelize {
     NSArray *components = [self componentsSeparatedByString:kUnderscore];
     NSMutableString *output = [NSMutableString string];
 
@@ -32,7 +32,7 @@
 }
 
 - (NSString *)setterName {
-	return [NSString stringWithFormat:kSetterNameObjectiveC, [[self camelCase] classify]];
+	return [NSString stringWithFormat:kSetterNameObjectiveC, [[self camelize] classify]];
 }
 
 - (NSString *)strip {

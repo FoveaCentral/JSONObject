@@ -45,7 +45,7 @@
 #pragma mark - FCActiveModel
 
 + (BOOL)validAttribute:(NSString *)name {
-	return [self.validAttributes containsObject:[name camelCase]];
+	return [self.validAttributes containsObject:[name camelize]];
 }
 
 @end

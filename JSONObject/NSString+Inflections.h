@@ -9,7 +9,7 @@
 
 @interface NSString(Inflections)
 
-- (NSString *)camelCase;
+- (NSString *)camelize;
 - (NSString *)classify;
 - (NSString *)setterName;
 - (NSString *)strip;

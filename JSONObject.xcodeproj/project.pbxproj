@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9CB65C65177CDE8500CA2A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C64177CDE8500CA2A6F /* Foundation.framework */; };
-		9CB65C6A177CDE8500CA2A6F /* JSONObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB65C69177CDE8500CA2A6F /* JSONObject.h */; };
-		9CB65C6C177CDE8500CA2A6F /* JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB65C6B177CDE8500CA2A6F /* JSONObject.m */; };
 		9CB65C73177CDE8500CA2A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C72177CDE8500CA2A6F /* XCTest.framework */; };
 		9CB65C74177CDE8500CA2A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C64177CDE8500CA2A6F /* Foundation.framework */; };
 		9CB65C76177CDE8500CA2A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C75177CDE8500CA2A6F /* UIKit.framework */; };
 		9CB65C79177CDE8500CA2A6F /* libJSONObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C61177CDE8500CA2A6F /* libJSONObject.a */; };
 		9CB65C7F177CDE8500CA2A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CB65C7D177CDE8500CA2A6F /* InfoPlist.strings */; };
 		9CB65C81177CDE8500CA2A6F /* JSONObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB65C80177CDE8500CA2A6F /* JSONObjectTests.m */; };
+		9CB65C8E177CDEE000CA2A6F /* NSObject+JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB65C8B177CDEE000CA2A6F /* NSObject+JSONObject.m */; };
+		9CB65C8F177CDEE000CA2A6F /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB65C8D177CDEE000CA2A6F /* NSString+Inflections.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9CB65C6A177CDE8500CA2A6F /* JSONObject.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +44,17 @@
 		9CB65C61177CDE8500CA2A6F /* libJSONObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSONObject.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB65C64177CDE8500CA2A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CB65C68177CDE8500CA2A6F /* JSONObject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONObject-Prefix.pch"; sourceTree = "<group>"; };
-		9CB65C69177CDE8500CA2A6F /* JSONObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONObject.h; sourceTree = "<group>"; };
-		9CB65C6B177CDE8500CA2A6F /* JSONObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONObject.m; sourceTree = "<group>"; };
 		9CB65C71177CDE8500CA2A6F /* JSONObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB65C72177CDE8500CA2A6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9CB65C75177CDE8500CA2A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9CB65C7C177CDE8500CA2A6F /* JSONObjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSONObjectTests-Info.plist"; sourceTree = "<group>"; };
 		9CB65C7E177CDE8500CA2A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CB65C80177CDE8500CA2A6F /* JSONObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONObjectTests.m; sourceTree = "<group>"; };
+		9CB65C8A177CDEE000CA2A6F /* NSObject+JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONObject.h"; sourceTree = "<group>"; };
+		9CB65C8B177CDEE000CA2A6F /* NSObject+JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONObject.m"; sourceTree = "<group>"; };
+		9CB65C8C177CDEE000CA2A6F /* NSString+Inflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Inflections.h"; sourceTree = "<group>"; };
+		9CB65C8D177CDEE000CA2A6F /* NSString+Inflections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Inflections.m"; sourceTree = "<group>"; };
+		9CB65C90177CDEF500CA2A6F /* FCActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCActiveModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,11 @@
 		9CB65C66177CDE8500CA2A6F /* JSONObject */ = {
 			isa = PBXGroup;
 			children = (
-				9CB65C69177CDE8500CA2A6F /* JSONObject.h */,
-				9CB65C6B177CDE8500CA2A6F /* JSONObject.m */,
+				9CB65C90177CDEF500CA2A6F /* FCActiveModel.h */,
+				9CB65C8A177CDEE000CA2A6F /* NSObject+JSONObject.h */,
+				9CB65C8B177CDEE000CA2A6F /* NSObject+JSONObject.m */,
+				9CB65C8C177CDEE000CA2A6F /* NSString+Inflections.h */,
+				9CB65C8D177CDEE000CA2A6F /* NSString+Inflections.m */,
 				9CB65C67177CDE8500CA2A6F /* Supporting Files */,
 			);
 			path = JSONObject;
@@ -224,7 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB65C6C177CDE8500CA2A6F /* JSONObject.m in Sources */,
+				9CB65C8F177CDEE000CA2A6F /* NSString+Inflections.m in Sources */,
+				9CB65C8E177CDEE000CA2A6F /* NSObject+JSONObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

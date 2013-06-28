@@ -1,6 +1,6 @@
+
 JSONObject
 ==========
-
 Lightweight JSON marshaling for Objective-C, with Ruby-like string inflections as a bonus.
 
 ## Installation
@@ -9,23 +9,28 @@ Lightweight JSON marshaling for Objective-C, with Ruby-like string inflections a
 
 2. Add the Podfile to your project root:
 
-```ruby
-pod 'JSONObject'
-```
-
+  ```ruby
+  pod 'JSONObject'
+  ```
 3. In your project root, install the pod by entering:
 
-```
-pod install
-```
+  ```
+  pod install
+  ```
+4. Open the ```.xcworkspace``` file in your project directory. From now on, use this workspace instead of the ```.xcodeproj``` file.
 
-Open the ```.xcworkspace``` file in your project directory. From now on, use this workspace instead of the ```.xcodeproj``` file.
+5. Add JSONObject to your model object's class header:
 
-4. Add JSONObject to your class header:
-
-```objective-c
-#import <JSONObject/NSObject+JSONObject.h>
-```
+  ```objective-c
+  #import <JSONObject/NSObject+JSONObject.h>
+  ```
 
 ## Usage
 
+* To convert the model object to JSON wrapped in the key name "object":
+
+  ```objective-c
+  NSData *json = [myObject toJSON:@"object"];
+  ```
+
+  This JSON data stream is suitable for use in a JSON request.

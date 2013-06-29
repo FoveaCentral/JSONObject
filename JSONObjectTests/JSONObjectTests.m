@@ -42,7 +42,7 @@
 	Dog *fido = [Dog alloc];
 	[fido setName:@"Fido"];
 	[fido setAge:@"1"];
-    XCTAssertTrue([fido.description isEqualToString:@"{\"Dog\":{\"age\":\"1\",\"name\":\"Fido\"}}"]);
+    XCTAssertTrue([[fido toString] isEqualToString:@"{\"Dog\":{\"age\":\"1\",\"name\":\"Fido\"}}"]);
 }
 
 @end

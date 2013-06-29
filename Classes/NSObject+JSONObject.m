@@ -30,8 +30,7 @@
     return (error != nil) ? nil : result;
 }
 
-#pragma mark - NSObject
-- (NSString *)description {
+- (NSString *)toString {
 	return [[NSString alloc] initWithData:[self toJSON:[self.class description]] encoding:NSUTF8StringEncoding];
 }
 

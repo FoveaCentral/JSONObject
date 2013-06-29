@@ -12,6 +12,7 @@
 
 + (NSArray *)attributes;
 + (id)objectWithContentsOfJSONURLString:(NSString *)urlString;
-- (NSData*)toJSON:(NSString *)keyName;
+- (NSData *)toJSON:(NSString *)keyName;
+- (NSString *)toString;
 
 @end

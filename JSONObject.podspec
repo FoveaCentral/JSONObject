@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.summary = 'Lightweight JSON marshaling for Objective-C, with Ruby-like string inflections as a bonus.'
   s.source = {
     :git => 'https://github.com/ivanoblomov/JSONObject.git',
-    :tag => '0.0.2'
+    :tag => '0.0.3'
   }
   s.source_files = 'Classes/*.{h,m}'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
 end

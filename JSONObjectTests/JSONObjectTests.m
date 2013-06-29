@@ -18,7 +18,7 @@
 
 @implementation Dog
 
-+ (NSArray*)exposedAttributes {
++ (NSArray*)attributes {
 	return @[@"age", @"name"];
 }
 @end

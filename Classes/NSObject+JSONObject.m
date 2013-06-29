@@ -1,23 +1,11 @@
 //  NSObject+JSONObject.m
-//  NovelsOnLocation
+//  JSONObject
 //
 //  Copyright © 2013 Roderick Monje
 
 #import "NSObject+JSONObject.h"
 
 @implementation NSObject (JSONObject)
-
-+ (NSArray*)attributes {
-	NSMutableArray *attributes = [[NSMutableArray alloc] init];
-	unsigned int outCount, i;
-	objc_property_t *obj_properties = class_copyPropertyList([self class], &outCount);
-	for (i = 0; i < outCount; i++) {
-		NSString *property = [NSString stringWithUTF8String:property_getName(obj_properties[i])];
-		if ([self.class validAttribute:property])
-			[attributes addObject:property];
-	}
-	return attributes;
-}
 
 + (id)objectWithContentsOfJSONURLString:(NSString *)urlString {
     __autoreleasing NSError* error = nil;
@@ -42,10 +30,9 @@
     return (error != nil) ? nil : result;
 }
 
-#pragma mark - FCActiveModel
-
-+ (BOOL)validAttribute:(NSString *)name {
-	return [self.validAttributes containsObject:[name camelize]];
+#pragma mark - NSObject
+- (NSString *)description {
+	return [[NSString alloc] initWithData:[self toJSON:[self.class description]] encoding:NSUTF8StringEncoding];
 }
 
 @end

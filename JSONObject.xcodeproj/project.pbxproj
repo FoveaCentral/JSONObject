@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CB1D8F6177E405700F4DDAC /* NSObject+JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB65CA0177E151500CA2A6F /* NSObject+JSONObject.m */; };
+		9CB1D8F7177E405700F4DDAC /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB65CA2177E151500CA2A6F /* NSString+Inflections.m */; };
+		9CB1D8F9177E529800F4DDAC /* InflectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB1D8F8177E529800F4DDAC /* InflectionsTests.m */; };
 		9CB65C65177CDE8500CA2A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C64177CDE8500CA2A6F /* Foundation.framework */; };
 		9CB65C73177CDE8500CA2A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C72177CDE8500CA2A6F /* XCTest.framework */; };
 		9CB65C74177CDE8500CA2A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB65C64177CDE8500CA2A6F /* Foundation.framework */; };
@@ -40,12 +43,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9CB1D8F8177E529800F4DDAC /* InflectionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InflectionsTests.m; sourceTree = "<group>"; };
 		9CB65C61177CDE8500CA2A6F /* libJSONObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSONObject.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB65C64177CDE8500CA2A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CB65C71177CDE8500CA2A6F /* JSONObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB65C72177CDE8500CA2A6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9CB65C75177CDE8500CA2A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		9CB65C9E177E151500CA2A6F /* FCActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCActiveModel.h; sourceTree = "<group>"; };
 		9CB65C9F177E151500CA2A6F /* NSObject+JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONObject.h"; sourceTree = "<group>"; };
 		9CB65CA0177E151500CA2A6F /* NSObject+JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONObject.m"; sourceTree = "<group>"; };
 		9CB65CA1177E151500CA2A6F /* NSString+Inflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Inflections.h"; sourceTree = "<group>"; };
@@ -118,7 +121,6 @@
 		9CB65C9D177E151500CA2A6F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9CB65C9E177E151500CA2A6F /* FCActiveModel.h */,
 				9CB65C9F177E151500CA2A6F /* NSObject+JSONObject.h */,
 				9CB65CA0177E151500CA2A6F /* NSObject+JSONObject.m */,
 				9CB65CA1177E151500CA2A6F /* NSString+Inflections.h */,
@@ -133,6 +135,7 @@
 				9CB65CA9177E154700CA2A6F /* InfoPlist.strings */,
 				9CB65CAB177E154700CA2A6F /* JSONObjectTests-Info.plist */,
 				9CB65CAC177E154700CA2A6F /* JSONObjectTests.m */,
+				9CB1D8F8177E529800F4DDAC /* InflectionsTests.m */,
 			);
 			path = JSONObjectTests;
 			sourceTree = "<group>";
@@ -234,6 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB1D8F6177E405700F4DDAC /* NSObject+JSONObject.m in Sources */,
+				9CB1D8F7177E405700F4DDAC /* NSString+Inflections.m in Sources */,
+				9CB1D8F9177E529800F4DDAC /* InflectionsTests.m in Sources */,
 				9CB65CAF177E154700CA2A6F /* JSONObjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

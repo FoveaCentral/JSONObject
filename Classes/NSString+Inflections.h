@@ -1,6 +1,7 @@
 //  NSString+Inflections.h
-//  NovelsOnLocation
+//  JSONObject
 //
+//  Copyright © 2013 Roderick Monje
 //  Adapted from https://gist.github.com/jdriscoll/3828685 on 4/9/13.
 
 #define kSetterNameObjectiveC @"set%@:"

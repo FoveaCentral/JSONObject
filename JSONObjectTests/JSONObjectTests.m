@@ -1,36 +1,48 @@
-//
 //  JSONObjectTests.m
 //  JSONObjectTests
 //
-//  Created by Roderick Monje on 6/27/13.
-//  Copyright (c) 2013 Fovea Central. All rights reserved.
-//
+//  Copyright © 2013 Roderick Monje
 
 #import <XCTest/XCTest.h>
+#import "NSObject+JSONObject.h"
 
 @interface JSONObjectTests : XCTestCase
+@end
 
+@interface Dog : NSObject
+
+@property (nonatomic, weak) NSString *age;
+@property (nonatomic, weak) NSString *name;
+
+@end
+
+@implementation Dog
+
++ (NSArray*)exposedAttributes {
+	return @[@"age", @"name"];
+}
 @end
 
 @implementation JSONObjectTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    
-    // Set-up code here.
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
+- (void)tearDown {
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testObjectWithContentsOfJSONURLString {
+	NSDictionary *zuck = [NSDictionary objectWithContentsOfJSONURLString:@"http://graph.facebook.com/4"];
+	XCTAssertTrue([[zuck objectForKey:@"name"] isEqualToString:@"Mark Zuckerberg"]);
+}
+
+- (void)testToJSON {
+	Dog *fido = [Dog alloc];
+	[fido setName:@"Fido"];
+	[fido setAge:@"1"];
+    XCTAssertTrue([fido.description isEqualToString:@"{\"Dog\":{\"age\":\"1\",\"name\":\"Fido\"}}"]);
 }
 
 @end

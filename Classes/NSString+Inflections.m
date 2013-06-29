@@ -1,7 +1,8 @@
 //  NSString+Inflections.m
-//  NovelsOnLocation
+//  JSONObject
 //
-//  Created by Roderick Monje on 4/9/13.
+//  Copyright © 2013 Roderick Monje
+//  Adapted from https://gist.github.com/jdriscoll/3828685 on 4/9/13.
 
 #import "NSString+Inflections.h"
 
